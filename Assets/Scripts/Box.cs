@@ -2,11 +2,17 @@
 using System.Collections;
 
 public class Box : MonoBehaviour {
+	public GameObject player;
+	public GameObject enemy;
 
 	void OnTriggerStay(Collider target){
+		if(target.gameObject.name != "cube"){
+			return;
+		}
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			target.transform.localScale = new Vector3 (.5f,.5f,.5f);
+			Destroy(target.gameObject);
 			print(target.gameObject.name);
+			enemy.GetComponent<HealthBar>().TakeDamage(20);
 		}
 	}
 }

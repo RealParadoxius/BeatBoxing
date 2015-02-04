@@ -41,10 +41,11 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
-'Assets/Bob.cs'
 'Assets/Scripts/Baseline.cs'
+'Assets/Scripts/Bob.cs'
 'Assets/Scripts/Box.cs'
 'Assets/Scripts/Death.cs'
+'Assets/Scripts/HealthBar.cs'
 'Assets/Scripts/ScrollDown.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
